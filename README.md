@@ -56,21 +56,6 @@ print('Test y Shape = {0}\n'.format([df_test.shape[0]]))
 print(df_train.columns)
 print(df_test.columns)
 ```
-Number of Training Examples = 891
-Number of Test Examples = 418
-
-Training X Shape = [(891, 12)]
-Training y Shape = [891]
-
-Test X Shape = [(418, 11)]
-Test y Shape = [418]
-
-Index(['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
-       'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'],
-      dtype='object')
-Index(['PassengerId', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch',
-       'Ticket', 'Fare', 'Cabin', 'Embarked'],
-      dtype='object')
 
 <h2>Exploratory Data Analysis</h2>
 PassengerId adalah id pada row, maka tidak ada pengaruh terhadap target yang dicari
