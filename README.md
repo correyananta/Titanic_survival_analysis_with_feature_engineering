@@ -14,7 +14,7 @@ The RMS Titanic was a British passenger liner that sank in the North Atlantic Oc
 
 
 <img 
-src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cnnindonesia.com%2Finternasional%2F20150414133919-134-46530%2Fhari-ini-103-tahun-lalu-kapal-titanic-tenggelam&psig=AOvVaw1Wh5OJS4YSy3wfFUPxzkXP&ust=1595145557268000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjL5Liq1uoCFQAAAAAdAAAAABAD"/>
+src="https://miro.medium.com/max/450/0*l5aRNzEo1QNsVn7u.jpg"/>
 
 
 ```python
