@@ -48,6 +48,8 @@ df_all.name = 'All Set'
 dfs = [df_train, df_test]
 df_train.head()
 ```
+<div>
+<style scoped>
 .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
