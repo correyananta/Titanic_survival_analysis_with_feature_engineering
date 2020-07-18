@@ -46,120 +46,31 @@ df_test.name = 'Test Set'
 df_all.name = 'All Set'
 
 dfs = [df_train, df_test]
-df_train.head()
+
+print('Number of Training Examples = {0}'.format(df_train.shape[0]))
+print('Number of Test Examples = {0}\n'.format(df_test.shape[0]))
+print('Training X Shape = {0}'.format([df_train.shape]))
+print('Training y Shape = {0}\n'.format([df_train['Survived'].shape[0]]))
+print('Test X Shape = {0}'.format([df_test.shape]))
+print('Test y Shape = {0}\n'.format([df_test.shape[0]]))
+print(df_train.columns)
+print(df_test.columns)
 ```
-<div>
-<style scoped>
-.dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+Number of Training Examples = 891
+Number of Test Examples = 418
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+Training X Shape = [(891, 12)]
+Training y Shape = [891]
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>PassengerId</th>
-      <th>Survived</th>
-      <th>Pclass</th>
-      <th>Name</th>
-      <th>Sex</th>
-      <th>Age</th>
-      <th>SibSp</th>
-      <th>Parch</th>
-      <th>Ticket</th>
-      <th>Fare</th>
-      <th>Cabin</th>
-      <th>Embarked</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Braund, Mr. Owen Harris</td>
-      <td>male</td>
-      <td>22.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>A/5 21171</td>
-      <td>7.2500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
-      <td>female</td>
-      <td>38.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>PC 17599</td>
-      <td>71.2833</td>
-      <td>C85</td>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>1</td>
-      <td>3</td>
-      <td>Heikkinen, Miss. Laina</td>
-      <td>female</td>
-      <td>26.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>STON/O2. 3101282</td>
-      <td>7.9250</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>1</td>
-      <td>1</td>
-      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
-      <td>female</td>
-      <td>35.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>113803</td>
-      <td>53.1000</td>
-      <td>C123</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>0</td>
-      <td>3</td>
-      <td>Allen, Mr. William Henry</td>
-      <td>male</td>
-      <td>35.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>373450</td>
-      <td>8.0500</td>
-      <td>NaN</td>
-      <td>S</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div></div>
+Test X Shape = [(418, 11)]
+Test y Shape = [418]
 
+Index(['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
+       'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'],
+      dtype='object')
+Index(['PassengerId', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch',
+       'Ticket', 'Fare', 'Cabin', 'Embarked'],
+      dtype='object')
 
 <h2>Exploratory Data Analysis</h2>
 PassengerId adalah id pada row, maka tidak ada pengaruh terhadap target yang dicari
@@ -178,4 +89,5 @@ Embarked adalah pelabuhan pemberangkatan ada 3 pelabuhan (C, Q atau S):
 C = Cherbourg
 Q = Queenstown
 S = Southampton
+
 
