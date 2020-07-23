@@ -4,7 +4,7 @@ In this chapter, the writter use the legendary dataset for many of data analyst.
 
 1. Exploratory Data Analysis
 2. Feature Engineering
-3. Developing model machine learning
+3. Developing the Predictive Model using Machine Learning
 
 The competition is simple: use machine learning to create a model that predicts which passengers survived the Titanic shipwreck.
 
